@@ -138,7 +138,11 @@ def clean_and_parse_markdown(file_path):
     INPUT :
         file_path = chemin d'accès au fichier à extraire
 
-    RETURN : les metadatas, le résumé, les sources et les sections en liste de tuples (titre, contenu)
+    RETURN :
+        les metadatas,
+        le résumé,
+        les sources,
+        les sections en liste de tuples (titre, contenu)
     """
     content = read_file(file_path)
 
@@ -161,3 +165,31 @@ def clean_and_parse_markdown(file_path):
     sections = find_all_collapsible_sections(main_content)
 
     return metadata, summary, sources, sections
+
+def get_title_wrapper(file_path):
+    """
+    Wrapper qui permet d'extraires les metadatas
+
+    INPUT :
+        file_path = chemin d'accès au fichier à extraire
+
+    RETURN :
+        les metadatas
+    """
+    content = read_file(file_path)
+
+    parts = content.split('+++', 2)
+    if len(parts) == 3:
+        frontmatter_raw, main_content = parts[1], parts[2]
+    else:
+        frontmatter_raw, main_content = '', content
+
+    metadata = {}
+    for line in frontmatter_raw.strip().split('\n'):
+        if '=' in line:
+            key, value = line.split('=', 1)
+            key = key.strip()
+            value = value.strip().strip('"')
+            metadata[key] = value
+
+    return metadata

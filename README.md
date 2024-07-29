@@ -16,7 +16,7 @@ graph LR;
     id4 -- top n --> id6(2n documents);
     id5 -- top n --> id6;
     id6 --> id7(reranker);
-    id7 --> id8([top k]) 
+    id7 --> id8([top k])
 ```
 
 ## Sparse embeddings
@@ -34,3 +34,17 @@ graph LR;
 ## Dense embeddings
 
 ## Reranker
+### Précision
+| Nom du modèle | type | top 1 | top 3 | top 5 |
+| --- | --- | --- | --- | --- |
+| gte-Qwen2-1.5B-instruct | majuscules + "?" | 3.2167% | 7.6632% | 10.3122% |
+| gte-Qwen2-1.5B-instruct | minsuscules + no "?" | 3.5951% | 7.5686% | 10.6906% |
+
+### Clusterisation
+| Nom du modèle | Silhouette (higher better) | Calinsky-Harabasz (higher better) | Davies-Bouldin (lower better) |
+| --- | --- | --- | --- |
+| gte-Qwen2-1.5B-instruct | 0.3734 | 27.9396 | 1.2127 |
+| mistral embedder | 0.3270 | 18.4911 | 1.2374 |
+
+## TODO
+[ ] - Essayer autre chose que des DOT products (-cos, distance eucl...)

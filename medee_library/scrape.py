@@ -1,6 +1,7 @@
-from files import clean_and_parse_markdown, list_files_in_dir, clean_text, split_markdown
-from model import create_embeddings
-from qdrant import add_vector
+from medee_library.files import clean_and_parse_markdown, list_files_in_dir, clean_text, split_markdown
+from medee_library.model import create_embeddings
+from medee_library.qdrant import add_vector
+from medee_library.mistral import create_question, create_embeddings as create_embeddings_mistral
 
 markdowns = list_files_in_dir("./recommandations")
 
@@ -52,7 +53,8 @@ def create_embeddings_and_uplpoad_qdrant(collection_name, path, metadata, conten
 
     RETURN : void
     """
-    embeddings = create_embeddings(path) # on demande l'embedding depuis le path du document (on embed pas le contenu mais le path)
+    # embeddings = create_embeddings(path) # on demande l'embedding depuis le path du document (on embed pas le contenu mais le path)
+    embeddings = create_embeddings_mistral(path)
     payload = create_obj(path, metadata, content, isSchema) # on créé l'objet de metadata du vecteur pour qdrant
     status = add_vector(collection_name, embeddings, payload, id) # on ajoute le vecteur a qdrant
 
@@ -103,3 +105,57 @@ def get_data(collection_name):
                 create_embeddings_and_uplpoad_qdrant(collection_name, path, metadata, under_section_content, False, i)
 
                 i += 1
+
+def get_data_to_create_question():
+    """
+    On map tous les fichiers markdown pour en extraire leur contenu nettoyé, séparé en sous titre et sous-sous titre
+
+    RETURN : an object containing all generated questions in this format : {"0": "question0", "1": "question1", ...}
+    """
+    i = 0
+
+    obj = {}
+
+    for mark in markdowns:
+        metadata, summary, sources, sections = clean_and_parse_markdown("./recommandations/" + mark)
+
+        title = metadata["title"]
+        lastmod = metadata["lastmod"]
+        specialites = metadata["specialites"] # array
+        sources = metadata["sources"] # array of source names
+
+        for section_title, section_content in sections:
+            clean = clean_text(section_content) # on nettoye le texte de tous les formattages qui pourraient géner les embeddings
+
+            if clean.split("###")[0]: # on vérifie s'il n'existe pas du texte avant le premier sous titre
+                path = title + " " + section_title
+                path = path.lower()
+                previous_chunk = clean.split("###")[0]
+                if "mermaid" not in section_content: # on vérifie si ce texte avant le premier sous titre n'est pas un schema
+                    if previous_chunk.strip(): # est ce que le texte avant n'est pas vide ? (que des \n ou des espaces)
+                        q = create_question(previous_chunk, path)
+                        obj[str(i)] = q
+                        if q != "":
+                            print(i, "ok")
+
+                        i += 1
+                else: # nous avons un graph
+                    title = section_content.split('title="')[1].split(".")[0].lower() # ici c'est le titre du graphique qui est extrait
+                    q = create_question(previous_chunk, path)
+                    obj[str(i)] = q
+                    if q != "":
+                        print(i, "ok")
+
+                    i += 1
+
+            for under_section_title, under_section_content in split_markdown(clean): # pour chaque sous-sous titre, on map
+                path = title + " " + section_title + " " + under_section_title
+                path = path.lower()
+                q = create_question(under_section_content, path)
+                obj[str(i)] = q
+                if q != "":
+                    print(i, "ok")
+
+                i += 1
+
+    return obj

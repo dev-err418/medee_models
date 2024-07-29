@@ -1,3 +1,7 @@
+"""
+Permet de vectoriser toutes les recommendations markdown de reco médicales en local et de les upload sur qdrant
+"""
+
 from medee_library.qdrant import is_reco_created
 from medee_library.scrape import get_data
 

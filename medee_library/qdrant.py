@@ -12,7 +12,6 @@ client = QdrantClient(
     api_key=key
 )
 
-
 def is_reco_created(collection_name):
     collections = client.get_collections()
     if collection_name not in collections.collections:
@@ -48,3 +47,19 @@ def run_query(collection_name, embedding, limit):
     )
 
     return results
+
+def run_filter(collection_name, title):
+    results = client.scroll(
+        collection_name=collection_name,
+        with_vectors=True,
+        scroll_filter=models.Filter(
+            must=[
+                models.FieldCondition(
+                    key="title",
+                    match=models.MatchValue(value=title),
+                )
+            ]
+        ),
+    )
+
+    return results[0]
