@@ -2,6 +2,7 @@ from medee_library.files import clean_and_parse_markdown, list_files_in_dir, cle
 from medee_library.model import create_embeddings
 from medee_library.qdrant import add_vector
 from medee_library.mistral import create_question, create_embeddings as create_embeddings_mistral
+from medee_library.claude import create_question as create_question_claude
 
 markdowns = list_files_in_dir("./recommandations")
 
@@ -106,7 +107,7 @@ def get_data(collection_name):
 
                 i += 1
 
-def get_data_to_create_question():
+def get_data_to_create_question(claude = False):
     """
     On map tous les fichiers markdown pour en extraire leur contenu nettoyé, séparé en sous titre et sous-sous titre
 
@@ -133,28 +134,46 @@ def get_data_to_create_question():
                 previous_chunk = clean.split("###")[0]
                 if "mermaid" not in section_content: # on vérifie si ce texte avant le premier sous titre n'est pas un schema
                     if previous_chunk.strip(): # est ce que le texte avant n'est pas vide ? (que des \n ou des espaces)
-                        q = create_question(previous_chunk, path)
-                        obj[str(i)] = q
-                        if q != "":
-                            print(i, "ok")
+                        if claude:
+                            q = create_question_claude(previous_chunk, path)
+                            obj[str(i)] = q
+                            if q != []:
+                                print(i, "ok")
+                        else:
+                            q = create_question(previous_chunk, path)
+                            obj[str(i)] = q
+                            if q != "":
+                                print(i, "ok")
 
                         i += 1
                 else: # nous avons un graph
                     title = section_content.split('title="')[1].split(".")[0].lower() # ici c'est le titre du graphique qui est extrait
-                    q = create_question(previous_chunk, path)
-                    obj[str(i)] = q
-                    if q != "":
-                        print(i, "ok")
+                    if claude:
+                        q = create_question_claude(previous_chunk, path)
+                        obj[str(i)] = q
+                        if q != []:
+                            print(i, "ok")
+                    else:
+                        q = create_question(previous_chunk, path)
+                        obj[str(i)] = q
+                        if q != "":
+                            print(i, "ok")
 
                     i += 1
 
             for under_section_title, under_section_content in split_markdown(clean): # pour chaque sous-sous titre, on map
                 path = title + " " + section_title + " " + under_section_title
                 path = path.lower()
-                q = create_question(under_section_content, path)
-                obj[str(i)] = q
-                if q != "":
-                    print(i, "ok")
+                if claude:
+                    q = create_question_claude(under_section_content, path)
+                    obj[str(i)] = q
+                    if q != []:
+                        print(i, "ok")
+                else:
+                    q = create_question(under_section_content, path)
+                    obj[str(i)] = q
+                    if q != "":
+                        print(i, "ok")
 
                 i += 1
 
