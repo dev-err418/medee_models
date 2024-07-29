@@ -1,0 +1,282 @@
++++
+title = "Cancer du col de l'utérus et infection par les papillomavirus (HPV)"
+prefix = "le "
+titleSeo = "Cancer du col de l'utérus et HPV"
+description = "Recommandations pour le dépistage du cancer du col de l'utérus et des papillomavirus. Vaccination Gardasil, frottis cervico-vaginal et test HPV haut risque"
+synonyms = ["Papillomavirus humains HPV", "dysplasies et condylomes"]
+auteurs = ["Martin FLOCH", "Jean-Baptiste FRON"]
+date = "2021-01-18T10:55:00+02:00"
+publishdate = "2022-04-20"
+lastmod = "2024-04-26"
+specialites = ["gynecologie-obstetrique"]
+annees = "2020"
+sources = ["INCa", "HAS", "MinSanté"]
+tags = ["cancer", "depistage", "douleur pelvienne", "IST", "HSH", "vaccin"]
+english = ["Cervical cancer"]
+sctid = "363354003"
+icd10 = "C53.9"
+image = true
+imageSrc = "Le cancer du col de l'utérus. scientificanimations.com, CC BY-SA 4.0, via Wikimedia Commons"
+flowchart = true
+todo = "pharynx, source: Les infections a HPV deviennent indétectables au bout de 2 ans dans 90% des cas. Dans les 10% des cas où elle persiste elle peut être a l'origine de cancer."
++++
+
+{{%article-summary%}}
+
+- Infection papillomavirus (HPV) nécessaire à l'apparition du cancer de l'utérus et des condylomes
+- << Le préservatif peut limiter le risque d'infection mais n'assure pas une protection efficace >> – *INCa*
+- Vaccination papillomavirus pour tous de 11 à 19 ans (Gardasil 9®), généralisée en classe 5<sup>e</sup>  
+  Étendue à 26 ans pour les [hommes ayant des relations avec des hommes (HSH)]({{< relref "hsh.md" >}}). Pas de vaccination en une seule dose avant changement de l'AMM (*Infovac*)
+- Dépistage organisé du cancer du col de l'utérus de 25 à 65 ans (test HPV haut risque tous les 5 ans après 30 ans)
+- Dépistage ciblé du cancer anal
+
+Documents patient: [INCa: dépistage du cancer du col (PDF)](https://www.e-cancer.fr/content/download/336635/4809888/file/Depliant%20Uterus%202022_148x210_3%20volets%20DEPCCU21_BD.pdf) et [INCa: vaccination HPV (PDF)](https://www.e-cancer.fr/content/download/336636/4809898/file/Depliant%20Papillomavirus%20148x210%20HPV%20DEPVACHPV21%202022%20BD.pdf)
+
+{{%/article-summary%}}
+{{%collapse "Définitions" %}}
+
+Papillomavirus humains (HPV)
+: Famille de virus à ADN double brin cancérigènes transmis par contacts sexuels responsables de 6300 cancers ano-génitaux et ORL annuels. Délai infection-tumeur de 10-15 ans. Plus de 60% des dysplasie légères régressent spontanément.  
+Mortalité de 20 à 40% pour les cancers induits, avec des séquelles majeures.  
+La vaccination prévient 90% des infections causant ces cancers.
+: Première *[infection sexuellement transmissible (IST)](/tags/ist/)* mondiale avec plus de 150 génotypes.  
+: En coloscopie, des HPV sont retrouvés chez 43% des femmes et 24% des hommes (*Vuitton 2018*).
+
+Cancer du col de l'utérus
+: Cancers non hormonodépendants avec un pic d'incidence à 40 ans.  
+80-90% sont des carcinomes épidermoïdes de l'exocol, 10-20% sont des adénocarcinomes du canal endocervical ou de l'endocol.
+
+### Facteurs de risque de cancer du col de l'utérus
+
+- Précocité de l'activité sexuelle
+- Multiplicité des partenaires sexuels
+- Parité élevée
+- Génotype de l'HPV (16, 18), infection par plusieurs types d'HPV à risque
+- Tabagisme
+- [VIH]({{< relref "vih-sida.md" >}})
+- [IST](/tags/ist/)
+- Utilisation prolongée de [contraceptifs oraux]({{< relref "contraception.md" >}})
+{.list-group}
+
+> – *HAS 2010*
+
+### Complications des papillomavirus
+
+Complications des infections par les papillomavirus et incidence imputée entre parenthèse:
+
+- Condylomes
+- Dysplasies (35.000/an) et cancers du col de l'utérus (3000/an)  
+  Tous les cancers du col sont dus aux HPV.
+- Cancer du vagin
+- Cancer de la vulve
+- Cancer de l'anus et du canal anal (360/an)  
+  {{%class%}}Incidence augmente de 5,8%/an sur la période 2010-2018 (INCa).{{%/class%}}
+- [Cancer du rectum]({{< relref "cancer-colorectal.md" >}})
+- Cancer du pénis (90/an)
+- Cancer du pharynx
+
+*Par << cancer >>, sous-entendu carcinome épidermoïde et lésions précancéreuses.*
+
+### Épidémiologie des atteintes liées aux papillomavirus
+
+- **Incidence:** 3159 cancers annuels (métropole 2023) et 35.000 dysplasies  
+  90 % des cancers du col peuvent être évités grâce au dépistage.
+- **Mortalité:** 1100 décès/an (métropole 2018)
+- Âge médian au diagnostic: 55 ans
+- Survie à 5 ans: 63 %
+- 80% des hommes et des femmes sexuellement actifs seront infectés par les papillomavirus durant leur vie
+- Portage masculin: 20% des hommes sont porteurs d'HPV haut risque (*[Bruni 2023](https://www.thelancet.com/journals/langlo/article/PIIS2214-109X(23)00305-4/fulltext#%20)*)
+- **Couverture vaccinale:** 41% des jeunes filles et 8% des garçons de 16 ans étaient vaccinés en 2022 en France métropolitaine contre 84% au Royaume-Uni (*Ameli*, *Inserm*)
+
+> – *BEH*
+
+{{< card-link title="Les Français et leur participation au dépistage des cancers" subtitle="Article RecoMédicales" url="/articles/participation-depistage-cancers/">}}
+
+### Abréviations
+
+HSH
+: homme ayant des rapports sexuels avec des hommes
+
+INCa
+: Institut national du cancer
+
+IST
+: infection sexuellement transmissible (*ex* maladie sexuellement transmissible - MST)
+
+HPV
+: papillomavirus humains
+
+HPV-HR
+: HPV à haut risque (génotype cancérigène)
+{.dl-inline}
+
+{{% /collapse %}}
+{{%collapse "Clinique" %}}
+
+Les symptômes du cancer du col de l'utérus sont tardifs et témoignent d'une maladie avancée:
+
+- Métrorragies ± provoquées
+- Leucorrhées
+- Dyspareunies
+- [Douleurs pelviennes](/tags/douleur-pelvienne/) ou lombaires
+- Dysurie
+- Voire œdèmes des membres inférieurs et névralgie crurale si évoluée
+- +75 ans: dépistage gériatrique ({{< modal-btn modal-g8 >}}G8{{< /modal-btn >}}, VES13, FOG ...)
+
+### Examen clinique
+
+Au spéculum: ulcération à bords irréguliers, saignant au contact. Le col peut également garder un aspect normal.
+
+{{% /collapse %}}
+{{%collapse "Dépistage du cancer du col et des papillomavirus" %}}
+
+### Dépistage du cancer du col de l'utérus
+
+Un frottis cervico-utérin non satisfaisant doit être renouvelé dans les 3 mois. 90 % des cancers du col peuvent être évités grâce au dépistage.
+{.alert .alert-info}
+
+[Information de la patiente - Santé BD: Le frottis](https://santebd.org/les-fiches-santebd/cancer/gyneco-le-depistage-cancer-du-col-de-luterus)
+
+Le dépistage organisé du cancer du col de l'utérus est recommandé pour toutes les femmes de **25 à 65 ans** par frottis cervico-vaginal remboursé à 100 % (vaccinées HPV ou non, généralisé depuis 2018). Le dépistage généralisé est aussi recommandé par la Commission européenne 2022 (30-65 ans).
+
+- Frottis cervico-vaginal à 25 ans, 26 ans et 29 ans avec analyse cytologique
+- À partir de 30 ans: frottis cervico-vaginal tous les 5 ans avec test HPV-HR
+
+**Cotation du frottis:** GS + JKHD001 (12,46 €)
+
+Rappel des conditions pour le frottis: ≥ 48h d'un rapport sexuel, hors menstruations, sans gel ou traitement local.
+
+En cas de refus, un auto-prélèvement vaginal (APV) peut être réalisé par la patiente elle-même afin d'encourager au dépistage ([vidéo](https://www.youtube.com/watch?v=ZQBhCOmagx4)).
+
+> Si la patiente ne reçoit pas ses invitations sur son compte *Ameli*, elle contacte sa CPAM.
+
+#### Exemptions pour le dépistage par frottis
+
+Ne pas réaliser de frottis cervical parmi les femmes suivantes de 25 à 65 ans:
+
+- Grossesse au 2e et 3e trimestre
+- Jamais eu de rapports sexuels
+- Suspicion de cancer du col de l'utérus
+- Traitement conservateur pour lésion pré-cancéreuse ou cancéreuse du col  
+  Suivi spécifique.
+- Femme sans col de l'utérus
+
+À l'inverse, femmes nécessitant un rythme intensifié: immunodéprimées (VIH, greffe ...) ou exposée au diéthylstilbestrol.
+
+### Dépistage du cancer de l'anus
+
+{{< clinique/depistage-cancer-anus >}}
+
+{{% /collapse %}}
+{{%collapse "Prévention du cancer du col de l'utérus" %}}
+
+### Préservatif
+
+> Le préservatif peut limiter le risque d'infection mais n'assure pas une protection efficace (*INCa*)
+
+### Vaccination contre les papillomavirus
+
+Indications au vaccin anti-HPV ([Gardasil 9®](https://ec.europa.eu/health/documents/community-register/2020/20201124149982/anx_149982_fr.pdf), seul recommandé):
+
+- Adolescent de 11 à 14 ans révolus avec 2 doses  
+  - **Schéma:** Gardasil 9® à M0 et M6-13
+  - Intérêt de co-administrer avec le rappel [dTcaPolio]({{< relref "vaccination.md" >}})
+  - Vaccination des garçons depuis janvier 2021
+  - Vaccination avec accord des parents des collégiens en 5e depuis la rentrée scolaire 2023
+- Rattrapage vaccinal de 15 à 19 ans révolus avec 3 doses  
+  - Schéma en 3 doses de 11 à 19 ans: Gardasil 9® à M0, M2 et M6
+  - Idem pour enfant/adolescent avec VIH de 11-19 ans
+- [HSH]({{< relref "hsh.md" >}})  
+  Jusqu'à 26 ans révolus avec schéma en 3 doses: Gardasil 9® à M0, M2 et M6
+- Enfant/Adolescent transplanté ou en attente de transplantation jusqu'à 19 ans avec 3 doses
+  - Possible à partir de 9 ans en prévision de transplantation d'organe solide
+  - Schéma: Gardasil 9® à M0, M2 et M6
+
+La vaccination HPV peut être réalisée par un pharmacien ou un infirmier sans ordonnance.
+
+#### Pour en savoir plus: Intérêts de la vaccination contre les papillomavirus
+
+La vaccination conte les papillomavirus prévient des lésions précancéreuses de tous les sites atteints (voir *Complications*).
+
+[INCa. 10 arguments clés sur la vaccination contre les infections liées aux papillomavirus humains](https://www.e-cancer.fr/Expertises-et-publications/Le-point-sur/10-arguments-sur-la-vaccination-contre-les-HPV)  
+[INCa. Dépliant sur la vaccination contre les cancers HPV (PDF)](https://www.e-cancer.fr/content/download/301756/4303586/file/IN793%20Depliant%20Papillomavirus%20148x210%20HPV_BD.pdf)
+
+> En Australie, où la recommandation de vacciner les filles date de 2007 et celle des garçons de 2013, la couverture vaccinale d'au moins 80% a permis :  
+Une réduction de plus de 77% des génotypes responsables de 75% des cancers du col de l'utérus ;  
+Une diminution de plus de 50% de l'incidence des lésions précancéreuses cervicale de haut grade chez les jeunes filles de moins de 20 ans.  
+Dans ce pays, le succès de la campagne de vaccination, associée au dépistage, ouvre la perspective d'une éradication du cancer du col de l'utérus d'ici une quinzaine d'année.  
+*INCa*
+
+{{% /collapse %}}
+{{%collapse "Conduite à tenir devant un frottis anormal" %}}
+
+### Prise en charge d'un frottis cervico-vaginal anormal
+
+{{< figure image="/images/photos/cancer-col-uterus-30.jpg" title="Conduite à tenir devant un frottis avec analyse cytologique anormale de 25 à 29 ans. INCa 2020" loading="lazy">}}
+{{< figure image="/images/photos/cancer-col-uterus-30+.jpg" title="Conduite à tenir devant un frottis avec test HPV haut risque anormal de 30 à 65 ans. INCa 2020" loading="lazy">}}
+
+{{< card-link-external title="Conduite à tenir devant une femme ayant une cytologie cervico-utérine anormale" url="https://www.e-cancer.fr/Expertises-et-publications/Catalogue-des-publications/Conduite-a-tenir-devant-une-femme-ayant-une-cytologie-cervico-uterine-anormale" subtitle="INCa 2017">}}
+
+{{% /collapse %}}
+{{%collapse "Traitement du cancer du col de l'utérus" %}}
+
+Les anomalies découvertes dans les suites du dépistage par frottis cervico-vaginal ou en colposcopie relèvent d'une prise en charge spécialisée pluridisciplinaire.
+
+L'**IRM pelvienne** est systématique dans le bilan d'extension initial du cancer du col de l'utérus.
+
+Le marqueur tumoral épidermoïde **SCC** peut être utile pour le suivi ultérieur.
+
+Le traitement du cancer du col peut être (après RCP): chirurgie, radiothérapie, curiethérapie, chimiothérapie.
+
+En cas de ménopause induite, un [traitement hormonal]({{< relref "menopause.md" >}}) peut être introduit.
+
+Mesures associées aux cancers:
+
+- Déclarer l'[ALD n°30]({{< relref "affection-longue-duree.md" >}})
+- Activité physique quotidienne
+- [Arrêt du tabac]({{< relref "arret-tabac.md" >}})
+
+{{% /collapse %}}
+{{%collapse "FMC gratuites" %}}
+
+{{< card-link-external title="MOOC HPV - L'affaire de tous" url="https://pns-mooc.com/fr/mooc/21/presentation" subtitle="Université de Paris">}}
+
+{{< card-link-external title="Prévention contre le papillomavirus (HPV)" url="https://pns-mooc.com/fr/mooc/29/presentation" subtitle="CNGOF, Infovac-France, ANP">}}
+
+{{< youtube id="-AMgdgFq9EM" title="Vaccination contre les papillomavirus humains (HPV) (VacciNews)" >}}
+
+- [INCa. Dépistage organisé du cancer du col de l'utérus](https://depistagecoluterus.e-cancer.fr)
+- [Abramovitz L. Vaccin contre le Papilloma virus : De l'AMM au pragmatisme. POST'U 2020 Paris](https://www.fmcgastro.org/texte-postu/postu-2020-paris/vaccin-contre-le-papilloma-virus-de-lamm-au-pragmatisme/)
+
+{{% /collapse %}}
+{{%sources%}}
+
+- {{< references/calendrier-vaccinal >}}
+- [INCa. La vaccination contre les infections liées aux papillomavirus humains (HPV) pour prévenir les cancers. 21/08/2023.](https://www.e-cancer.fr/Professionnels-de-sante/Facteurs-de-risque-et-de-protection/Agents-infectieux/Prevenir-les-cancers-lies-aux-HPV)
+- [Inserm. Papillomavirus : faut-il généraliser la vaccination ?. 27/03/2023.](https://www.inserm.fr/actualite/papillomavirus-faut-il-generaliser-la-vaccination/)
+- [Service-Public. Papillomavirus : vaccination généralisée à la rentrée 2023 pour les élèves de 5e. 07/03/2023.](https://www.service-public.fr/particuliers/actualites/A16438)
+- {{< references/beh-cancers-incidence >}}
+- {{< references/inca-cancers-mortalite >}}
+- [Commission européenne. Union européenne de la santé: une nouvelle approche de l'UE en matière de détection du cancer - Un dépistage élargi et de meilleure qualité. Communiqué de presse. 20/09/2022.](https://ec.europa.eu/commission/presscorner/detail/fr/ip_22_5562)
+- [Hanguehard R et al. Couverture vaccinale contre les infections à papillomavirus humain des filles âgées de 15 à 18 ans et déterminants de vaccination, France, 2021. BEH. 2022.](http://beh.santepubliquefrance.fr/beh/2022/24-25/2022_24-25_3.html)
+- [INCa. Le dépistage du cancer du col de l'utérus en pratique. Collection Outils pour la pratique. Décembre 2020. (PDF)](https://www.e-cancer.fr/content/download/307096/4383798/file/Outil-Pratique-Uterus-2021-@%20DEF%2012032021.pdf)
+- [INCa. Dépistage et prévention de cancer du col de l'utérus - Rôle du médecin et de la sage-femme. Juillet 2020.](https://www.e-cancer.fr/Expertises-et-publications/Catalogue-des-publications/Depistage-et-prevention-de-cancer-du-col-de-l-uterus-Role-du-medecin-et-de-la-sage-femme)
+- [HAS. Évaluation de la recherche des papillomavirus humains (HPV) en dépistage primaire des lésions précancéreuses et cancéreuses du col de l'utérus et de la place du double immuno-marquage p16/Ki67. 2019.](https://www.has-sante.fr/jcms/c_2806160/fr/evaluation-de-la-recherche-des-papillomavirus-humains-hpv-en-depistage-primaire-des-lesions-precancereuses-et-cancereuses-du-col-de-l-uterus-et-de-la-place-du-double-immuno-marquage-p16/ki67)
+- [Marth C et al. Cervical cancer: ESMO Clinical Practice Guidelines for diagnosis, treatment and follow-up. Annals of Oncology. 2017.](https://www.annalsofoncology.org/article/S0923-7534(19)42148-0/fulltext)
+- [Conseil National du Sida et des hépatite virales (CNS). Prise en charge médicale des personnes vivant avec le VIH. Août 2017. (PDF)](https://cns.sante.fr/wp-content/uploads/2017/10/experts-vih_cancers.pdf)
+- [INCa. Conduite à tenir devant une femme ayant une cytologie cervico-utérine anormale. 2017.](https://www.e-cancer.fr/Expertises-et-publications/Catalogue-des-publications/Conduite-a-tenir-devant-une-femme-ayant-une-cytologie-cervico-uterine-anormale)
+- [HAS. Cancer invasif du col utérin. Actes et prestations Affection de longue durée. Juin 2012.](https://www.has-sante.fr/upload/docs/application/pdf/2010-02/ald_30_lap_col_uterin_web.pdf)
+- [HAS. Cancer invasif du col utérin. Janvier 2010. (PDF)](https://www.has-sante.fr/upload/docs/application/pdf/2010-02/ald_30_gm_col_uterin_web_2010-02-12_09-57-34_599.pdf)
+- [Vaccination Info Service. Les infections à papillomavirus humains (HPV).](https://vaccination-info-service.fr/Les-maladies-et-leurs-vaccins/Les-Infections-a-Papillomavirus-humains-HPV)
+
+### Bibliographie en attente
+
+- [Fischerova D et al. The Role of Imaging in Cervical Cancer Staging: ESGO/ESTRO/ESP Guidelines (Update 2023). Cancers (Basel). 2024.](https://www.ncbi.nlm.nih.gov/pmc/articles/pmid/38398166/)
+- [INCa. Cancers invasifs du col utérin - Du diagnostic au suivi. 2021.](https://www.e-cancer.fr/Expertises-et-publications/Catalogue-des-publications/Cancers-invasifs-du-col-uterin-Du-diagnostic-au-suivi)
+
+{{%/sources%}}
+{{% modal title="Score G8" id="modal-g8"%}}
+
+{{< scores/g8 >}}
+
+{{% /modal %}}
