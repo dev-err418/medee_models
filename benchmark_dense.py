@@ -10,7 +10,7 @@ import numpy as np
 from sklearn.metrics import silhouette_score, calinski_harabasz_score, davies_bouldin_score
 from sklearn.preprocessing import LabelEncoder
 
-collection_name = "reco_mistral"
+collection_name = "reco_alibaba"
 
 with open("dense.json", "r") as f:
     data = json.load(f)

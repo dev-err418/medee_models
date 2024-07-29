@@ -32,8 +32,6 @@ graph LR;
   * **Output** : le dernier layer renvoie une sequence d'embeddings; la représentation du token `[CLS]` est une représentation de l'input entier. Les autres embeddings sont utilisés pour reffiners les embeddings ou en faire des moyennes (pooling) -> dense vectors
 
 ## Dense embeddings
-
-## Reranker
 ### Précision
 | Nom du modèle | type | top 1 | top 3 | top 5 |
 | --- | --- | --- | --- | --- |
@@ -45,6 +43,8 @@ graph LR;
 | --- | --- | --- | --- |
 | gte-Qwen2-1.5B-instruct | 0.3734 | 27.9396 | 1.2127 |
 | mistral embedder | 0.3270 | 18.4911 | 1.2374 |
+
+## Reranker
 
 ## TODO
 [ ] - Essayer autre chose que des DOT products (-cos, distance eucl...)
