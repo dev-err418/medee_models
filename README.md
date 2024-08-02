@@ -48,3 +48,6 @@ graph LR;
 
 ## TODO
 [ ] - Essayer autre chose que des DOT products (-cos, distance eucl...)
+[ ] - Auto complete dans la search bar
+[ ] - Check box pour avoir le LLM ou non
+[ ] - ANSM (base de données des médicaments)
