@@ -1,7 +1,9 @@
-from medee_library.scrape import get_data_to_create_question
+# from medee_library.scrape import get_data_to_create_question
 import json
 
-data = get_data_to_create_question(claude=True)
+# data = get_data_to_create_question(claude=True)
 
-with open("sparse.json", "w") as f:
-    json.dump(data, f, indent=4)
+with open("sparse.json", "r") as f:
+    data = json.load(f)
+
+print(data["0"])
